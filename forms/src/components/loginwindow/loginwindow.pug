@@ -1,0 +1,12 @@
+mixin loginwindow()
+	.loginwindow
+		h3 Войти
+		.maskedtextfield1
+			+textfield('maskedtextfield', 'Email', 'text', '')
+		.maskedtextfield1
+			+textfield('maskedtextfield', 'Пароль', 'text', '')
+		.get_num
+			+button-s('button_pay', 'войти')
+		.login
+			p Нет аккаунта на Toxin?
+			+button-s('button_enable', 'Войти')

@@ -1,0 +1,6 @@
+mixin likebutton(className, type, name, ...items)
+	each index, item in items
+		div(class=className)
+			input(id=name+item, type=type, name=index)
+			label(for=name+item)
+			text= index

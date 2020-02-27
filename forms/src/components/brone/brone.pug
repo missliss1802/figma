@@ -1,0 +1,16 @@
+mixin brone()
+	.brone
+		h3 Найдём номера под ваши пожелания
+		.datedropdown3
+			.date1
+				p Прибытие
+				+dropdown('datedropdown', 'ДД.ММ.ГГГГ')
+			.date2
+				p Выезд
+				+dropdown('datedropdown', 'ДД.ММ.ГГГГ')
+		.guests
+			p Гости
+			+dropdown('casedropdownexp2', 'Сколько гостей')
+		.get_num
+			+button-s('button_pay', 'подобрать номер')
+		

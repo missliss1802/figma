@@ -1,0 +1,11 @@
+mixin menu(...items)
+	.menu
+		each item, index in items
+			a(href="#" class='a' + index)= item
+
+mixin header(source)
+	.header
+		img(src='src/img/logo.svg')
+		+menu('Home', 'About us', 'Services', 'Careers', 'News', 'Documentation')
+		+button-s('login-but', 'login')
+		+button-s('register-but', 'register')

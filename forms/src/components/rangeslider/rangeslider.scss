@@ -1,0 +1,92 @@
+.rangeslider1 {
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 266px;
+}
+
+.rangeslider1 p {
+  text-align: right;
+  font-size: 12px;
+  color: #8F90A0;
+}
+
+.flat-slider.ui-corner-all,
+.flat-slider .ui-corner-all {
+  border-radius: 0;
+}
+
+.flat-slider.ui-slider {
+  border: 0;
+  background: #fff;
+  border: 1px solid #6BD1C2;
+  border-radius: 7px;
+}
+
+.flat-slider.ui-slider-horizontal {
+  height: 4px;
+}
+
+.flat-slider.ui-slider-vertical {
+  height: 15em;
+  width: 9px;
+}
+
+.flat-slider .ui-slider-handle {
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(to top, #66D2E9, #6FCF9B);
+  border-radius: 50%;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.flat-slider.ui-slider-horizontal .ui-slider-handle {
+  top: 50%;
+  margin-top: -6px;
+}
+
+.flat-slider.ui-slider-vertical .ui-slider-handle {
+  left: 50%;
+  margin-left: -10px;
+}
+
+
+.flat-slider .ui-slider-range {
+  border: none;
+  border-radius: 7;
+  background: linear-gradient(to top, #66D2E9, #6FCF9B);
+}
+
+.flat-slider.ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 4px;
+}
+
+.flat-slider.ui-slider-vertical .ui-slider-range {
+  left: 0;
+  width: 9px;
+}
+
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+}
+
+.ui-slider {
+    position: relative;
+    text-align: left;
+}
+
+.ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    background-position: 0 0;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -.3em;
+    margin-left: -.3em;
+}

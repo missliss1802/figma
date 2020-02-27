@@ -1,0 +1,114 @@
+.textfield1 {
+	display: flex;
+	flex-direction: row;
+	
+}
+
+.textfield-button-default, .masked-textfield-button {
+	width: 320px;
+	height: 40px;
+	padding-left: 15px;
+	font-size: 14px;
+	border: 1px solid #1F2041;
+	border-radius: 4px;
+	color: #1F2041;
+	letter-spacing: 0.5px;
+	font-family: "Montserrat";
+	opacity: 25%;
+}
+
+.textfield-button-hover {
+	width: 320px;
+	height: 40px;
+	padding-left: 15px;
+	font-size: 14px;
+	border: 1px solid #1F2041;
+	border-radius: 4px;
+	color: #1F2041;
+	letter-spacing: 0.5px;
+	font-family: "Montserrat";
+	opacity: 75%;
+}
+
+.textfield-default-text {
+    margin-top: 113px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    p {
+        margin: 0;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+		color: #1F2041;
+		font-size: 12px;
+    }
+    .lite {
+        opacity: 50%;
+    }
+    .bold {
+        font-weight: bold;
+    }
+}
+
+.textfield-hover-text, 
+.masked-textfield-text {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    p {
+        margin: 0;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+		color: #1F2041;
+		font-size: 12px;
+    }
+    .lite {
+        opacity: 50%;
+    }
+    .bold {
+        font-weight: bold;
+    }
+}
+
+.subscriptionstextfield {
+	width: 190px;
+	height: 42px;
+	padding: 0;
+	padding-left: 15px;
+	font-size: 14px;
+	border-top: 1px solid #C7C7CF;
+  	border-right: none;
+  	border-bottom: 1px solid #C7C7CF;
+  	border-left: 1px solid #C7C7CF;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 4px;
+	color: #575871;
+	letter-spacing: 0.5px;
+	font-family: "Montserrat";
+}
+
+.subscriptionstextfield1 {
+	font-size: 0;
+}
+
+.subscriptionstextfieldbutton {
+	background: url(/src/img/right-arrow.svg) no-repeat center right 15px;
+	height: 44px;
+	width: 60px;
+	padding: 0;
+	border: none;
+	border-top: 1px solid #C7C7CF;
+  	border-right: 1px solid #C7C7CF;
+  	border-bottom: 1px solid #C7C7CF;
+  	border-left: none;
+	border-top-left-radius: 0;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 0;
+
+}

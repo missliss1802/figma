@@ -1,0 +1,229 @@
+.expandlist1 {
+	width: 266px;
+	height: 44px;
+	display: flex;
+	flex-direction: row;
+	button {
+		background: url(/src/img/arrow.svg) no-repeat center right 15px;
+		width: 266px;
+		padding: 0;
+		border: none;
+		font-size: 12px;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-align: left;
+		font-family: "Montserrat";
+	}
+}
+
+.expandlist2 {
+	width: 266px;
+	height: 44px;
+	display: flex;
+	flex-direction: row;
+	button {
+		background: url(/src/img/arrow-up.svg) no-repeat center right 15px;
+		width: 266px;
+		padding: 0;
+		border: none;
+		font-size: 12px;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-align: left;
+		font-family: "Montserrat";
+	}
+}
+
+.explist1 p, .explist2 p, .listitems p {
+		position:relative;
+		padding-left:30px;
+		padding-top: 3px;
+		margin-top: 0;
+		font-size: 14px;
+		color: #8F90A0;
+}
+
+.listitems {
+}
+
+.listitems p {
+	font-weight: bold;
+	color: #575871;
+	margin-bottom: 5px;
+}
+
+.span-block {
+	padding-left: 30px;
+}
+
+.listitems .span-block {
+	font-size: 12px;
+	color: #8F90A0;
+}
+
+.explist1 p input[type='checkbox'],
+.explist2 p input[type='checkbox'],
+.listitems p input[type='checkbox']{
+			position: absolute;
+			z-index: -1;
+			opacity: 0;
+		}
+
+.explist1 p label::before,
+.explist2 p label::before,
+.listitems p label::before {
+	content:'';
+	display:block;
+	height:20px;
+	width:20px;
+	border:1px solid #C7C7CF;
+	position:absolute;
+	border-radius: 4px;
+	top:0;
+	left:0;
+	transition: 0.3s;
+}
+
+
+
+.explist1 p input[type='checkbox']:checked + label::before,
+.explist2 p input[type='checkbox']:checked + label::before,
+.listitems p input[type='checkbox']:checked + label::before {
+	border:1px solid #BC9CFF;
+	background-image: url(/src/img/checked.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: 0.3s;
+}
+
+.textimage {
+	width: 280px;
+	display: flex;
+	flex-direction: row;
+	p {
+		margin: 0;
+		font-size: 14px;
+		font-weight: bold;
+		color: #575871;
+		margin-bottom: 4px;
+		
+	}
+
+	span {
+		font-size: 14px;
+		color: #575871;
+	}
+
+	img {
+		padding: 4px;
+	}
+}
+
+.radiobut1, .togglebutton1 {
+	display: flex;
+	flex-direction: row;
+}
+
+.radiobut1 p {
+		position:relative;
+		padding-left:30px;
+		margin-top: 0;
+		font-size: 14px;
+		color: #8F90A0;
+		margin-right: 20px;
+		padding-top: 1.5px;
+}
+
+.radiobut1 p input[type='radio'] {
+			position: absolute;
+			z-index: -1;
+			opacity: 0;
+		}
+
+.togglebutton1 p input[type='checkbox'] {
+			position: absolute;
+			z-index: -1;
+			opacity: 0;
+		}
+
+.radiobut1 p label::before {
+	content:'';
+	display:block;
+	height:19px;
+	width:19px;
+	border:1px solid #C7C7CF;
+	position:absolute;
+	border-radius: 50%;
+	top:0;
+	left:0;
+	transition: 0.3s;
+}
+
+.radiobut1 p input[type='radio']:checked + label::before {
+	border:1px solid #BC9CFF;
+	height:13px;
+	width:13px;
+	background-color: #BC9CFF;
+	background-clip: content-box;
+	padding: 3px;
+	transition: 0.3s;
+}
+
+.togglebutton1 p {
+		position:relative;
+		padding-left:50px;
+		margin-top: 0;
+		font-size: 14px;
+		color: #8F90A0;
+		margin-right: 20px;
+		padding-top: 1.5px;
+}
+
+.togglebutton1 p label::before {
+	content:'';
+	display:block;
+	height:19px;
+	width:38px;
+	border:1px solid #C7C7CF;
+	position:absolute;
+	border-radius: 10px;
+	background-image: url(/src/img/radio1.svg);
+	background-repeat: no-repeat;
+	background-position: 3px;
+	top:0;
+	left:0;
+	transition: 0.3s;
+}
+
+.togglebutton1 p input[type='checkbox']:checked + label::before {
+	border:1px solid #BC9CFF;
+	height:19px;
+	width:38px;
+	background-image: url(/src/img/radio.svg);
+	background-repeat: no-repeat;
+	background-position: 22px;
+	transition: 0.3s;
+}
+
+.list1 ul {
+	padding: 0;
+	width: 380px;
+}
+
+.list1 ul li {
+	list-style-type: none;
+	display: inline-block;
+	font-size: 14px;
+	color: #575871;
+	margin-bottom: 10px;
+}
+
+.list1 ul div {
+	content: '';
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	margin-right: 5px;
+	border-radius: 50%;
+	background-color: #C7C7CF;
+}

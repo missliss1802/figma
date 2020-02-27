@@ -1,0 +1,5 @@
+mixin explistlabel(idName, type, name, ...items)
+	each item, index in items
+		p
+			input(id=idName+index, type=type, name=name)
+			label(for=name + index)= item

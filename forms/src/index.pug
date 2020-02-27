@@ -1,0 +1,35 @@
+include ./components/textfield/textfield.pug
+include ./components/dropdown/dropdown.pug
+
+.wrapper
+    img(src='/src/img/toxin.svg')
+    .forms
+        .textfield-default
+            .textfield-default-text
+                p.bold Text Field
+                p.lite Default
+            +textfield('textfield-button-default', 'Email', 'text', '')
+        .textfield-hover
+            .textfield-hover-text
+                p.bold Text Field
+                p.lite Hover / Focus
+            +textfield('textfield-button-hover', '', 'text', 'This is pretty awesome')
+        .dropdown-default
+            .dropdown-default-text
+                p.bold Dropdown
+                p.lite Default
+            +dropdown('dropdown-button-default', 'Сколько гостей')
+        .masked-textfield
+            .masked-textfield-text
+                p.bold Masked Text Field
+                p.lite Default
+            +textfield('masked-textfield-button', 'ДД.ММ.ГГГГ', 'text', '')
+        .dropdown-date
+            .dropdown-date-left
+                .dropdown-date-text
+                    p.bold Date dropdown
+                +dropdown('dropdown-button-date', 'ДД.ММ.ГГГГ')
+            .dropdown-date-right
+                .dropdown-date-text
+                    p.bold Date dropdown
+                +dropdown('dropdown-button-date', '19.08.2019')

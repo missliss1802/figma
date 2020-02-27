@@ -1,0 +1,49 @@
+.header {
+	width: 1440px;
+	height: 70px;
+	display: flex;
+	flex-direction: row;
+	img {
+		margin-left: 140px;
+	}
+	.menu {
+		margin-left: 267px;
+		padding-top: 24px;
+		a {
+			text-decoration: none;
+			font-size: 14px;
+			font-family: 'Montserrat';
+			margin-left: 30px;
+			color: #8F90A0;
+		}
+		.a0 {
+			font-weight: bold;
+			color: #575871;
+		}
+	}
+
+	button {
+		font-family: 'Montserrat';
+		font-size: 12px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-top: 17px;
+		margin-bottom: 19px;
+		border: 1px solid #8CA3F9;
+		color: #8CA3F9;
+		background-color: #fff;
+		border-radius: 25px;
+		padding: 9px 20px 10px 19px;
+	}
+
+	button:hover {
+		color: #fff;
+		background-color: #8CA3F9;
+	}
+	.login-but {
+		margin-left: 30px;
+	}
+	.register-but {
+		margin-left: 20px;
+	}
+}

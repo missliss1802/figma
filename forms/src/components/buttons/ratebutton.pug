@@ -1,0 +1,4 @@
+mixin ratebutton(className, type, name, ...items)
+	each index, item in items
+		input(class=name, id=name+index, type=type, name=name)
+		label(for=name+index)

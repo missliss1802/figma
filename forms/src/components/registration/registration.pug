@@ -1,0 +1,26 @@
+mixin registration()
+	.registration
+		h3 Регистрация аккаунта
+		.textfield1
+			+textfield('textfield', 'Имя', 'text', '')
+		.textfield1
+			+textfield('textfield', 'Фамилия', 'text', '')
+		.radiobut1 
+			+explistlabel('radiobut2', 'radio', 'radiobut2', 'Мужчина', 'Женщина')
+		.date_birthday
+			p дата рождения
+			.maskedtextfield1
+				+textfield('maskedtextfield', 'ДД.ММ.ГГГГ', 'text', '')
+		.form_email
+			p данные для входа в сервис
+			.maskedtextfield1
+				+textfield('maskedtextfield', 'Email', 'text', '')
+			.maskedtextfield1
+				+textfield('maskedtextfield', 'Пароль', 'text', '')
+		.togglebutton1 
+			+explistlabel('togglebut1', 'checkbox', 'togglebut1', 'Получать спецпредложения')
+		.get_pay
+			+button-s('button_pay', 'перейти к оплате')
+		.login
+			p Уже есть аккаунт на Toxin
+			+button-s('button_enable', 'Войти')
