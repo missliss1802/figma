@@ -1,6 +1,6 @@
-mixin droplist(className, text1, text2, textb1, textb2, classb1, classb2)
+mixin droplist(className, classtext, text1, text2, textb1, textb2, classb1, classb2)
 	div(class=className)
-		p= text1
+		p(class=classtext)= text1
 		.buttons
 			button(class=classb1)= textb1
 			p= text2

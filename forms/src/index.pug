@@ -1,5 +1,7 @@
 include ./components/textfield/textfield.pug
 include ./components/dropdown/dropdown.pug
+include ./components/lists/droplist.pug
+include ./components/buttons/button-s.pug
 
 .wrapper
     img(src='/src/img/toxin.svg')
@@ -33,3 +35,27 @@ include ./components/dropdown/dropdown.pug
                 .dropdown-date-text
                     p.bold Date dropdown
                 +dropdown('dropdown-button-date', '19.08.2019')
+        .filter-dropdown
+            .filter-dropdown-text
+                p.bold Filter date dropdown
+            +dropdown('filter-dropdown-button', '19 авг - 23 авг')
+        .subscription-textfield
+            .subscription-textfield-text
+                p.bold Subscription Text field
+            .subscription-textfield-buttons
+                +textfield('subscription-textfield-button', 'ДД.ММ.ГГГГ', 'text', '')
+                +textfield('subscription-textfield-button-submit', '', 'button', '')
+        .dropdown-default-menu
+            .dropdown-default-menu-text
+                p.bold Dropdown
+                p.lite Default
+            +dropdown('dropdown-default-menu-button', '2 спальни, 2 кровати')
+        .dropdown-default-menu-expanded
+            .dropdown-default-menu-expanded-text
+                p.bold Dropdown
+                p.lite Expanded
+            +dropdown('dropdown-default-menu-button', 'Сколько гостей')
+            .dropdown-default-menu-expanded-content
+                +droplist('list-item', 'dropdown-default-menu-expanded-content-text', 'спальни', '0', '-', '+', 'pl', 'mi')
+                +droplist('list-item', 'dropdown-default-menu-expanded-content-text', 'кровати', '0', '-', '+', 'pl', 'mi')
+                +droplist('list-item', 'dropdown-default-menu-expanded-content-text', 'ванные комнаты', '0', '-', '+', 'pl1', 'mi')

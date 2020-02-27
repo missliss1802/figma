@@ -52,7 +52,8 @@
 }
 
 .textfield-hover-text, 
-.masked-textfield-text {
+.masked-textfield-text,
+.subscription-textfield-text {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
@@ -73,8 +74,8 @@
     }
 }
 
-.subscriptionstextfield {
-	width: 190px;
+.subscription-textfield-button {
+	width: 206px;
 	height: 42px;
 	padding: 0;
 	padding-left: 15px;
@@ -92,13 +93,13 @@
 	font-family: "Montserrat";
 }
 
-.subscriptionstextfield1 {
+.subscription-textfield-buttons {
 	font-size: 0;
 }
 
-.subscriptionstextfieldbutton {
+.subscription-textfield-button-submit {
 	background: url(/src/img/right-arrow.svg) no-repeat center right 15px;
-	height: 44px;
+	height: 42px;
 	width: 60px;
 	padding: 0;
 	border: none;
